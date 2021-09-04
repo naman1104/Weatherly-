@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+  
+    "name": "WeatherLY",
+    "description": "Search for current weather of a city",
+    "version": "1.0",
+    "author" : "Naman Kalsotra",
+    "browser_action": {
+     "default_icon": "icon.png",
+     "default_popup": "popup.html"
+    },
+    "permissions": [
+     "activeTab"
+     ]
+  }

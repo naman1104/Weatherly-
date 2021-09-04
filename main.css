@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-image: url(' weather.jpg');
+    background-size: cover;
+    
+    background-position: top center;
+}
+
+.appwrap{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px ;
+    min-height: 50vh;
+    min-width: 70vh;
+    background-image: linear-gradient(to bottom, rgba
+    (0,0,0,0.3),rgba(0,0,0,0.6));
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px 5 px;
+}
+ 
+header input{
+    width: 100%;
+    max-width: 150px;
+    padding: 3px 5px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 6px 0px 6px 0px;
+    border-bottom: 2px solid #DF8E00;
+    color: #313131;
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+}
+
+header input:focus{
+    background-color: rgba(255,255,255,0.6);
+}
+
+.alert {
+    max-width: 40px;
+}
+main{
+    flex: 1 1 100%;
+    padding: 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+img {
+	width: 40px;
+}
+
+.location .city{
+    color: rgb(143, 24, 24);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.location .date{
+    color: rgb(143, 24, 24);
+    font-size: 13px;
+
+}
+
+.current .temp{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 52px;
+    margin: 10px 0px;
+    text-shadow: 2px 4px rgba(0,0,0,0.6);
+
+}
+
+.current .temp span{
+    font-weight: 500;
+}
+.current .weather{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: italic;
+    margin-bottom: 15px;
+    text-shadow: 0px 3px rgba(0,0,0,0.4);
+}
+
+.current .hilow{
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-shadow: 0px 4px rgba(0,0,0,0.4);
+}
